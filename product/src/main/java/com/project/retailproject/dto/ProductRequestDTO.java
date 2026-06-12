@@ -1,4 +1,4 @@
-package com.project.product.dto;
+package com.project.retailproject.dto;
 
 import jakarta.validation.constraints.*;
 

@@ -1,28 +1,12 @@
-package com.project.product.model;
+package com.project.retailproject.dto;
 
-import jakarta.persistence.*;
-import jakarta.validation.constraints.*;
+public class ProductResponseDTO {
 
-@Entity
-@Table(name = "products")
-public class Product {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long productId;
-
-    @NotBlank(message = "Product name is required")
     private String productName;
-
-    @NotBlank(message = "Category is required")
     private String category;
-
-    @Min(value = 0, message = "Price cannot be negative")
     private double price;
-
     private String status;
-
-    public Product() {}
 
     // Getters & Setters
     public Long getProductId() { return productId; }

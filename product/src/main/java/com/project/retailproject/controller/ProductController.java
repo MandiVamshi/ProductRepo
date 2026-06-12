@@ -1,8 +1,8 @@
-package com.project.product.controller;
+package com.project.retailproject.controller;
 
-import com.project.product.dto.ProductRequestDTO;
-import com.project.product.dto.ProductResponseDTO;
-import com.project.product.service.ProductService;
+import com.project.retailproject.dto.ProductRequestDTO;
+import com.project.retailproject.dto.ProductResponseDTO;
+import com.project.retailproject.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -13,7 +13,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/products")
-@CrossOrigin(origins = "*")
 public class ProductController {
 
     @Autowired
